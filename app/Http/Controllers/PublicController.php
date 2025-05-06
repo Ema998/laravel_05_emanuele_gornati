@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class PublicController extends Controller
 {
@@ -40,6 +42,10 @@ class PublicController extends Controller
     {
         $name = $request->input('username');
         $email = $request->input('email');
-        $message = $request->input('message');
+        $message = $request->input('messaggio');
+
+        Mail::to($email)->send(new ContactMail($name, $email, $message));
+
+         return redirect()->route('homepage')->with('success', 'Email inviata con successo a ' . $email);
     }
 }
