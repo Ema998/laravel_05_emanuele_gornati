@@ -35,4 +35,11 @@ class PublicController extends Controller
         ];
         return view('prodotti');
     }
+
+    public function submit(request $request)
+    {
+        $name = $request->input('username');
+        $email = $request->input('email');
+        $message = $request->input('message');
+    }
 }

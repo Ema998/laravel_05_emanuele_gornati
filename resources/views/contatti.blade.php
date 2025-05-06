@@ -9,19 +9,20 @@
                         <h4>Per qualsiasi informazione non esitare a contattarci</>
                 </div>
                 <div class="row justify-content-center align-items-center">
-                    <div class="clo-12 col-md-5">
-                    <form class="px-5 py-3 box-bg shadow rounded">
+                    <div class="clo-12 col-md-6">
+                    <form class="px-5 py-3 box-bg shadow rounded" method="POST" action="{{ route('contatti.submit') }}">
+                        @csrf
                         <div class="mb-3">
                             <label for="username" class="form-label">inserisci il tuo nome</label>
-                            <input type="text" class="form-control" id="username" >
+                            <input type="text" class="form-control" id="username" name="username" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">inserisci la tua email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="text" class="form-label">scrivici i tuoi suggerimenti</label>
-                            <textarea type="" class="form-control" id="message" cols="30" rows="10"></textarea>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-dark">invia</button>
                     </form>
