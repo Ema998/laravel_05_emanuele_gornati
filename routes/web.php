@@ -5,7 +5,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\ProdottiController;
 
-Route::get('/', [PublicController::class, 'index'])->name('homepage');
+Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
 
 Route::get('chi-siamo', [PublicController::class, 'aboutUs'])->name('aboutUs');
 
