@@ -8,7 +8,7 @@ use App\Mail\ContactMail;
 
 class PublicController extends Controller
 {
-    public function index()
+    public function homepage()
     {
         return view('homepage');
     }
