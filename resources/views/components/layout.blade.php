@@ -24,10 +24,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link
-              @if (Route::currentRouteName() == 'aboutUs')
+              @if (Route::currentRouteName() == 'about-us')
                 active
               @endif
-              " href="{{route('aboutUs')}}">Chi Siamo</a>
+              " href="{{route('about-us')}}">Chi Siamo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link

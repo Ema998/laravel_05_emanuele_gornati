@@ -6,7 +6,7 @@
                 </div>
                 @foreach ($prodotti as $prodotto)
                     <div class="col-12 col-md-3">
-                        <x-prodotti-card prodottoName="{{ $prodotto['name'] }}" prodottoDescription="{{ $prodotto['description'] }}" prodottoPrice="{{ $prodotto['price'] }}" prodottoId="{{ $prodotto['id'] }}" />
+                        <x-prodottiCard prodottoName="{{ $prodotto['name'] }}" prodottoDescription="{{ $prodotto['description'] }}" prodottoPrice="{{ $prodotto['price'] }}" prodottoId="{{ $prodotto['id'] }}" />
                     </div>
                 @endforeach
             </div>
