@@ -11,7 +11,7 @@
                 <div class="row h-100 justify-content-around align-items-center">
                     @foreach ($users as $user)
                         <div class="col-12 col-md-4">
-                           <x-about-us-card userName="{{ $user['name'] }}" userSurname="{{ $user['surname']}}" userRole="{{ $user['role'] }}" />
+                           <x-aboutUsCard userName="{{ $user['name'] }}" userSurname="{{ $user['surname']}}" userRole="{{ $user['role'] }}" />
                         </div>
                     @endforeach
                 </div>

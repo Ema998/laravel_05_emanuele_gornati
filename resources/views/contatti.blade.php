@@ -2,7 +2,7 @@
         <header class="container-fluid">
             <div class="row h-100 align-items-center justify-content-around">
                 <div class="col-12 h-25 justify-content-center align-items-center">
-                    <h3 class="text-color text-center display-5">CONTATTI</h3>
+                    <h3 class="text-color text-center display-5 mt-5 mb-3">CONTATTI</h3>
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center">
@@ -10,7 +10,7 @@
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="clo-12 col-md-6">
-                    <form class="px-5 py-3 box-bg shadow rounded" method="POST" action="{{ route('contatti.submit') }}">
+                    <form class="mt-5 px-5 py-3 box-bg shadow rounded" method="POST" action="{{ route('contatti.submit') }}">
                         @csrf
                         <div class="mb-3">
                             <label for="username" class="form-label">inserisci il tuo nome</label>
@@ -28,7 +28,7 @@
                     </form>
                     </div>
                 </div>
-                <div class="col-md-3 text-center box d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-3 text-center box d-flex flex-column justify-content-center align-items-center mt-5">
                     <div class="row">
                     <div class="col-12">
                         <i class="icon bi bi-whatsapp"></i>
@@ -40,7 +40,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-md-3 text-center box d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-3 text-center box d-flex flex-column justify-content-center align-items-center mt-5">
                 <div class="row">
                 <div class="col-12">
                         <i class="icon bi bi-instagram"></i>
@@ -52,7 +52,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-md-3 text-center box d-flex flex-column justify-content-center align-items-center">
+                <div class="col-md-3 text-center box d-flex flex-column justify-content-center align-items-center mt-5">
                     <div class="row">
                         <div class="col-12">
                             <i class="icon bi bi-facebook"></i>
